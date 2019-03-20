@@ -1,0 +1,112 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(bg.jpg);
+	background-size: cover;
+
+}
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: green;
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.kutu
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 40px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 15px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.kutu h2
+{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+
+}
+.kutu .girisBox
+{
+	position: relative;
+}
+.kutu .girisBox input
+{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	margin-bottom: 30px;
+	border:none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	transition: .5s;
+
+}
+.kutu .girisBox label
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: 1px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+
+}
+.kutu .girisBox input:focus ~ label,
+.kutu .girisBox input:valid ~ label
+{
+	top: -20px;
+	left: 0;
+	font-size: 12px;
+
+}
+.kutu .girisBox input:focus
+{
+	border-bottom: 1px solid #03a9f4;
+}
+.kutu .girisBox input:valid
+{
+	border-bottom: 1px solid #0f0;
+}
+.kutu .girisBox input:focus ~ label
+{
+	color: #03a9f4;
+}
+.kutu .girisBox input:valid ~ label
+{
+	color: #03ff44;
+}
+.kutu input[type="submit"]
+{
+	background: transparent;
+	border:none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
